@@ -7,7 +7,7 @@ import theme from 'styles/theme';
 
 class MyApp extends App {
   render() {
-    const { Component, pageProps, router } = this.props;
+    const { Component, pageProps } = this.props;
     return (
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
