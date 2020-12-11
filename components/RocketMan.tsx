@@ -1,8 +1,6 @@
 // https://codepen.io/chrisgannon/pen/EjVyXN
 import * as React from 'react';
 import { makeStyles, createStyles } from '@material-ui/core';
-import { TimelineMax, TweenMax, Linear, Power2 } from 'gsap';
-import clsx from 'clsx';
 
 const useStyles = makeStyles(() =>
   createStyles({
