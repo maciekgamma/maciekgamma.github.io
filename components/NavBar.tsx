@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppBar, Button, Toolbar, FormControl, Select, MenuItem, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, FormControl, Select, MenuItem, makeStyles } from '@material-ui/core';
 import LocalizedStrings from 'react-localization';
 import { localizedStrings } from 'public/localization';
 import { LanguageContext, AnimatedButton } from 'components';
@@ -35,8 +35,10 @@ export const NavBar = () => {
 
   strings.setLanguage(languageContext.language);
 
-  const handleLanguageChange = (event: { target: { value: string } }) => {
-    languageContext.setLanguage(event.target.value);
+  const handleLanguageChange = (event: { target: { value: unknown } }) => {
+    if (languageContext.setLanguage !== undefined) {
+      languageContext.setLanguage(event.target.value);
+    }
   };
 
   return (

@@ -37,10 +37,6 @@ const useStyles = makeStyles((theme: any) => ({
 }));
 
 const Index: React.FC = () => {
-  const handleOpenLink = (href: string) => {
-    window.open(href);
-    return false;
-  };
   const classes = useStyles();
 
   return (

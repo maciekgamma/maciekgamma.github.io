@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useSpring, animated } from 'react-spring';
+import { animated } from 'react-spring';
 import { Button, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
