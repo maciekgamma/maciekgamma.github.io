@@ -1,6 +1,7 @@
 // next.config.js
 const withPlugins = require('next-compose-plugins');
 const offline = require('next-offline');
+const withImages = require('next-images');
 
 const nextConfig = {
   target: process.env.NODE_ENV !== 'production' ? 'server' : 'serverless',
@@ -16,3 +17,4 @@ const nextConfig = {
 };
 
 module.exports = withPlugins([[offline]], nextConfig);
+module.exports = withImages();
